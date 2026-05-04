@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Madeleine Crouth | Student Wellbeing & Social Impact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:#111; }
+    nav { background:#111; color:white; padding:15px 20px; display:flex; gap:20px; position:sticky; top:0; }
+    nav a { color:white; text-decoration:none; cursor:pointer; }
+    .page { display:none; }
+    .active { display:block; }
+    .container { max-width:1000px; margin:auto; padding:60px 20px; }
+    .hero { background:#111; color:white; padding:100px 20px; text-align:center; }
+    .section-alt { background:#f5f5f5; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .card { border:1px solid #ddd; padding:20px; border-radius:10px; background:white; }
+    .metric { font-size:28px; font-weight:bold; }
+    footer { background:#111; color:white; text-align:center; padding:40px; }
+  </style>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0,0);
+    }
+    window.onload = () => showPage('home');
+  </script>
+</head>
+
+<body>
+
+<nav>
+  <a onclick="showPage('home')">Home</a>
+  <a onclick="showPage('case')">Case Studies</a>
+  <a onclick="showPage('research')">Research</a>
+  <a onclick="showPage('blog')">Blog</a>
+  <a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page">
+  <div class="hero">
+    <h1>Madeleine Crouth</h1>
+    <p>Student Wellbeing • Advocacy • Equity • Research • Systems Change</p>
+  </div>
+
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I work across student wellbeing systems, advocacy, and applied research, focusing on the lived realities of students navigating hardship in Aotearoa New Zealand.
+    </p>
+  </div>
+
+  <div class="container section-alt">
+    <h2>Impact Snapshot</h2>
+    <div class="grid">
+      <div class="card"><div class="metric">300+</div><div>Students Supported</div></div>
+      <div class="card"><div class="metric">Multi-campus</div><div>Service Delivery</div></div>
+      <div class="card"><div class="metric">High complexity</div><div>Case Work</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<div id="case" class="page container">
+  <h2>Case Studies</h2>
+
+  <div class="card">
+    <h3>Tautoko – Student Hardship and Food Insecurity</h3>
+
+    <p>
+      Tautoko provides frontline hardship support to students experiencing food insecurity, housing instability, and financial stress across multiple campuses.
+    </p>
+
+    <p><strong>Context</strong></p>
+    <p>
+      Increasing demand reflects a shift from short-term hardship to sustained structural pressure. Students are presenting with complex needs, including housing insecurity, lack of access to food, and financial precarity.
+    </p>
+
+    <p><strong>Observed Realities</strong></p>
+    <ul>
+      <li>Students sharing beds in shifts to accommodate overcrowded living situations</li>
+      <li>Students sleeping in tents or temporary arrangements following missed rent payments</li>
+      <li>Students and families choosing between food and continued participation in education</li>
+    </ul>
+
+    <p><strong>Role</strong></p>
+    <ul>
+      <li>Coordinated delivery of hardship support services</li>
+      <li>Responded to high-complexity student cases</li>
+      <li>Supported development of access pathways for food and wellbeing services</li>
+    </ul>
+
+    <p><strong>Impact</strong></p>
+    <ul>
+      <li>Supported 300+ students experiencing hardship (est.)</li>
+      <li>Improved access to essential support services</li>
+      <li>Increased visibility of hidden student hardship within institutional systems</li>
+    </ul>
+
+    <p><em>Insights drawn from frontline service delivery within tertiary student support systems in Aotearoa New Zealand.</em></p>
+  </div>
+
+  <div class="card">
+    <h3>Waiwhero – Period Poverty and Educational Access</h3>
+
+    <p>
+      Waiwhero addresses period poverty as a critical barrier to student participation, wellbeing, and dignity.
+    </p>
+
+    <p><strong>Context</strong></p>
+    <p>
+      Lack of access to period products remains a significant but often under-recognised barrier within tertiary education settings.
+    </p>
+
+    <p><strong>Observed Realities</strong></p>
+    <ul>
+      <li>A significant proportion of students will not attend classes without access to period products</li>
+      <li>Financial constraints directly impact attendance and participation</li>
+    </ul>
+
+    <p><strong>Role</strong></p>
+    <ul>
+      <li>Supported access to essential wellbeing resources</li>
+      <li>Contributed to reducing stigma and access barriers</li>
+    </ul>
+
+    <p><strong>Impact</strong></p>
+    <ul>
+      <li>Improved access to essential products</li>
+      <li>Supported increased student attendance and engagement</li>
+      <li>Strengthened equity-focused wellbeing provision</li>
+    </ul>
+
+    <p><em>Insights drawn from frontline student wellbeing service delivery.</em></p>
+  </div>
+</div>
+
+<!-- RESEARCH -->
+<div id="research" class="page container section-alt">
+  <h2>Research</h2>
+  <p>
+    My research explores tourism ethics, human trafficking, and organisational readiness, focusing on how frontline systems respond to complex social challenges and how research can inform real-world policy and practice.
+  </p>
+</div>
+
+<!-- BLOG -->
+<div id="blog" class="page container">
+  <h2>The Cost of Living Crisis is Reshaping Access to Education</h2>
+
+  <p>
+    The cost of living crisis is no longer a background pressure for students in Aotearoa New Zealand. It is actively reshaping who can access, participate in, and remain within tertiary education.
+  </p>
+
+  <p>
+    Frontline student support services are increasingly encountering cases that reflect structural, not temporary, hardship. Students are routinely forced into trade-offs between housing stability, food security, and continued participation in study.
+  </p>
+
+  <p>
+    Housing insecurity is one of the most visible indicators. Students are sharing beds in shifts, living in overcrowded conditions, or sleeping in tents after falling behind on rent. At the same time, food insecurity is rising, with students and families making decisions between basic nutrition and educational participation.
+  </p>
+
+  <p>
+    Period poverty provides another clear example. A significant proportion of students will not attend classes without access to essential products, highlighting how unmet basic needs translate directly into reduced participation.
+  </p>
+
+  <p>
+    If institutions are serious about equity, wellbeing services cannot be treated as supplementary. They are foundational infrastructure that enables participation in education.
+  </p>
+
+  <p>
+    Without structural intervention, these pressures will continue to redefine who education is accessible to. The question is no longer whether students are struggling — it is whether institutions are willing to respond at the scale required.
+  </p>
+
+  <p><em>Insights drawn from frontline student support and advocacy work within tertiary education systems in Aotearoa New Zealand.</em></p>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+  <footer>
+    <h2>Contact</h2>
+    <p>your-email@here.com</p>
+    <p><a href="#" style="color:white;">LinkedIn Profile</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
